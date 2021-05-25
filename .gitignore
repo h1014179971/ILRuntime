@@ -1,0 +1,8 @@
+Assembly-CSharp.csproj
+Assembly-CSharp-Editor.csproj
+.vs/ILRuntime/v16/.suo
+ILRuntime.sln
+ILRuntime.csproj
+Library/
+Logs/
+obj/

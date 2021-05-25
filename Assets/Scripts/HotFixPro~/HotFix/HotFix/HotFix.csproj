@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{54256453-791F-4B81-B250-87A2F02CCE5C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HotFix</RootNamespace>
+    <AssemblyName>HotFix</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\..\..\Library\ScriptAssemblies\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine">
+      <HintPath>D:\Program Files\Unity\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Program Files\Unity\Editor\Data\Managed\UnityEngine\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Program Files\Unity\Editor\Data\Managed\UnityEngine\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>D:\Program Files\Unity\Editor\Data\Managed\UnityEngine\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Program Files\Unity\Editor\Data\Managed\UnityEngine\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Program Files\Unity\Editor\Data\Managed\UnityEngine\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Program Files\Unity\Editor\Data\Managed\UnityEngine\UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Program Files\Unity\Editor\Data\Managed\UnityEngine\UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Program Files\Unity\Editor\Data\Managed\UnityEngine\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>D:\Program Files\Unity\Editor\Data\UnityExtensions\Unity\GUISystem\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Program Files\Unity\Editor\Data\Managed\UnityEngine\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Program Files\Unity\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Program Files\Unity\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Program Files\Unity\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Program Files\Unity\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Program Files\Unity\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameLauncher.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scripts\Foundation\Codec\FullSerializerAPI.cs" />
+    <Compile Include="Scripts\Foundation\CommonHelper\ObjectPoolHelper.cs" />
+    <Compile Include="Scripts\Foundation\CommonMgr\AutoResGCMgr.cs" />
+    <Compile Include="Scripts\Foundation\EasyObjectPool\EasyObjectPool.cs" />
+    <Compile Include="Scripts\Foundation\EasyObjectPool\PoolObject.cs" />
+    <Compile Include="Scripts\Foundation\EasyObjectPool\ResourceManager.cs" />
+    <Compile Include="Scripts\Foundation\Encry\CryptoPrefs.cs" />
+    <Compile Include="Scripts\Foundation\Encry\StringEncryption.cs" />
+    <Compile Include="Scripts\Foundation\Event\EventDispatcher.cs" />
+    <Compile Include="Scripts\Foundation\Event\Events.cs" />
+    <Compile Include="Scripts\Foundation\Event\EventTriggerListener.cs" />
+    <Compile Include="Scripts\Foundation\Interface\IManager.cs" />
+    <Compile Include="Scripts\Foundation\Interface\IUpdateProxy.cs" />
+    <Compile Include="Scripts\Foundation\SDK\AndroidPlatform.cs" />
+    <Compile Include="Scripts\Foundation\SDK\AndroidPlatformWrapper.cs" />
+    <Compile Include="Scripts\Foundation\SDK\EditorPlatform.cs" />
+    <Compile Include="Scripts\Foundation\SDK\IOSPlatform.cs" />
+    <Compile Include="Scripts\Foundation\SDK\IOSPlatformWrapper.cs" />
+    <Compile Include="Scripts\Foundation\SDK\PlatformFactory.cs" />
+    <Compile Include="Scripts\Foundation\Singleton\DDOLSingleton.cs" />
+    <Compile Include="Scripts\Foundation\Singleton\MonoSingleton.cs" />
+    <Compile Include="Scripts\Foundation\Singleton\Singleton.cs" />
+    <Compile Include="Scripts\Foundation\Singleton\SingletonException.cs" />
+    <Compile Include="Scripts\Foundation\Tools\FileHelper.cs" />
+    <Compile Include="Scripts\Foundation\Tools\FTPUtil.cs" />
+    <Compile Include="Scripts\Foundation\Tools\InputWrapper.cs" />
+    <Compile Include="Scripts\Foundation\Tools\LogUtility.cs" />
+    <Compile Include="Scripts\Foundation\Tools\Long2.cs" />
+    <Compile Include="Scripts\Foundation\Tools\MyDebug.cs" />
+    <Compile Include="Scripts\Foundation\Tools\NTPDate.cs" />
+    <Compile Include="Scripts\Foundation\Tools\RandomUtils.cs" />
+    <Compile Include="Scripts\Foundation\Tools\ScreenShot.cs" />
+    <Compile Include="Scripts\Foundation\Tools\SelfRotate.cs" />
+    <Compile Include="Scripts\Foundation\Tools\StreamFile.cs" />
+    <Compile Include="Scripts\Foundation\Tools\StringUtils.cs" />
+    <Compile Include="Scripts\Foundation\Tools\Timer.cs" />
+    <Compile Include="Scripts\Foundation\Tools\TimerEvent.cs" />
+    <Compile Include="Scripts\Foundation\Tools\TimeUtils.cs" />
+    <Compile Include="Scripts\Foundation\Tools\Utils.cs" />
+    <Compile Include="Scripts\Foundation\Utils\MethodExtension.cs" />
+    <Compile Include="Scripts\FullSerializer\Source\Converters\fsArrayConverter.cs" />
+    <Compile Include="Scripts\FullSerializer\Source\Converters\fsDateConverter.cs" />
+    <Compile Include="Scripts\FullSerializer\Source\Converters\fsDictionaryConverter.cs" />
+    <Compile Include="Scripts\FullSerializer\Source\Converters\fsEnumConverter.cs" />
+    <Compile Include="Scripts\FullSerializer\Source\Converters\fsForwardConverter.cs" />
+    <Compile Include="Scripts\FullSerializer\Source\Converters\fsGuidConverter.cs" />
+    <Compile Include="Scripts\FullSerializer\Source\Converters\fsIEnumerableConverter.cs" />
+    <Compile Include="Scripts\FullSerializer\Source\Converters\fsKeyValuePairConverter.cs" />
+    <Compile Include="Scripts\FullSerializer\Source\Converters\fsNullableConverter.cs" />
+    <Compile Include="Scripts\FullSerializer\Source\Converters\fsPrimitiveConverter.cs" />
+    <Compile Include="Scripts\FullSerializer\Source\Converters\fsReflectedConverter.cs" />
+    <Compile Include="Scripts\FullSerializer\Source\Converters\fsTypeConverter.cs" />
+    <Compile Include="Scripts\FullSerializer\Source\Converters\fsWeakReferenceConverter.cs" />
+    <Compile Include="Scripts\FullSerializer\Source\Converters\Unity\AnimationCurve_DirectConverter.cs" />
+    <Compile Include="Scripts\FullSerializer\Source\Converters\Unity\Bounds_DirectConverter.cs" />
+    <Compile Include="Scripts\FullSerializer\Source\Converters\Unity\Gradient_DirectConverter.cs" />
+    <Compile Include="Scripts\FullSerializer\Source\Converters\Unity\GUIStyleState_DirectConverter.cs" />
+    <Compile Include="Scripts\FullSerializer\Source\Converters\Unity\GUIStyle_DirectConverter.cs" />
+    <Compile Include="Scripts\FullSerializer\Source\Converters\Unity\Keyframe_DirectConverter.cs" />
+    <Compile Include="Scripts\FullSerializer\Source\Converters\Unity\LayerMask_DirectConverter.cs" />
+    <Compile Include="Scripts\FullSerializer\Source\Converters\Unity\RectOffset_DirectConverter.cs" />
+    <Compile Include="Scripts\FullSerializer\Source\Converters\Unity\Rect_DirectConverter.cs" />
+    <Compile Include="Scripts\FullSerializer\Source\Converters\Unity\UnityEvent_Converter.cs" />
+    <Compile Include="Scripts\FullSerializer\Source\fsAotCompilationManager.cs" />
+    <Compile Include="Scripts\FullSerializer\Source\fsBaseConverter.cs" />
+    <Compile Include="Scripts\FullSerializer\Source\fsConfig.cs" />
+    <Compile Include="Scripts\FullSerializer\Source\fsContext.cs" />
+    <Compile Include="Scripts\FullSerializer\Source\fsConverter.cs" />
+    <Compile Include="Scripts\FullSerializer\Source\fsConverterRegistrar.cs" />
+    <Compile Include="Scripts\FullSerializer\Source\fsData.cs" />
+    <Compile Include="Scripts\FullSerializer\Source\fsDirectConverter.cs" />
+    <Compile Include="Scripts\FullSerializer\Source\fsExceptions.cs" />
+    <Compile Include="Scripts\FullSerializer\Source\fsIgnoreAttribute.cs" />
+    <Compile Include="Scripts\FullSerializer\Source\fsISerializationCallbacks.cs" />
+    <Compile Include="Scripts\FullSerializer\Source\fsJsonParser.cs" />
+    <Compile Include="Scripts\FullSerializer\Source\fsJsonPrinter.cs" />
+    <Compile Include="Scripts\FullSerializer\Source\fsMemberSerialization.cs" />
+    <Compile Include="Scripts\FullSerializer\Source\fsObjectAttribute.cs" />
+    <Compile Include="Scripts\FullSerializer\Source\fsObjectProcessor.cs" />
+    <Compile Include="Scripts\FullSerializer\Source\fsPropertyAttribute.cs" />
+    <Compile Include="Scripts\FullSerializer\Source\fsResult.cs" />
+    <Compile Include="Scripts\FullSerializer\Source\fsSerializer.cs" />
+    <Compile Include="Scripts\FullSerializer\Source\Internal\fsCyclicReferenceManager.cs" />
+    <Compile Include="Scripts\FullSerializer\Source\Internal\fsOption.cs" />
+    <Compile Include="Scripts\FullSerializer\Source\Internal\fsPortableReflection.cs" />
+    <Compile Include="Scripts\FullSerializer\Source\Internal\fsTypeExtensions.cs" />
+    <Compile Include="Scripts\FullSerializer\Source\Internal\fsVersionedType.cs" />
+    <Compile Include="Scripts\FullSerializer\Source\Internal\fsVersionManager.cs" />
+    <Compile Include="Scripts\FullSerializer\Source\Reflection\fsMetaProperty.cs" />
+    <Compile Include="Scripts\FullSerializer\Source\Reflection\fsMetaType.cs" />
+    <Compile Include="Scripts\FullSerializer\Source\Reflection\fsReflectionUtility.cs" />
+    <Compile Include="Scripts\FullSerializer\Source\Reflection\fsTypeCache.cs" />
+    <Compile Include="Scripts\MHAsset\Helper\AssetLoader.cs" />
+    <Compile Include="Scripts\MHAsset\Runtime\Core\Assets.cs" />
+    <Compile Include="Scripts\MHAsset\Runtime\Core\Download.cs" />
+    <Compile Include="Scripts\MHAsset\Runtime\Core\Downloader.cs" />
+    <Compile Include="Scripts\MHAsset\Runtime\Core\Manifest.cs" />
+    <Compile Include="Scripts\MHAsset\Runtime\Core\NetworkMonitor.cs" />
+    <Compile Include="Scripts\MHAsset\Runtime\Core\Reference.cs" />
+    <Compile Include="Scripts\MHAsset\Runtime\Core\Requests.cs" />
+    <Compile Include="Scripts\MHAsset\Runtime\Core\Updater.cs" />
+    <Compile Include="Scripts\MHAsset\Runtime\Core\VDisk.cs" />
+    <Compile Include="Scripts\MHAsset\Runtime\Core\Versions.cs" />
+    <Compile Include="Scripts\MHAsset\Runtime\UI\MessageBox.cs" />
+    <Compile Include="Scripts\MHAsset\Runtime\Utility\StringExtension.cs" />
+    <Compile Include="Scripts\MHAsset\Runtime\Utility\Utility.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assembly-CSharp.csproj" />
+    <None Include="Scripts\FullSerializer\Source.meta" />
+    <None Include="Scripts\FullSerializer\Source\Converters.meta" />
+    <None Include="Scripts\FullSerializer\Source\Converters\fsArrayConverter.cs.meta" />
+    <None Include="Scripts\FullSerializer\Source\Converters\fsDateConverter.cs.meta" />
+    <None Include="Scripts\FullSerializer\Source\Converters\fsDictionaryConverter.cs.meta" />
+    <None Include="Scripts\FullSerializer\Source\Converters\fsEnumConverter.cs.meta" />
+    <None Include="Scripts\FullSerializer\Source\Converters\fsForwardConverter.cs.meta" />
+    <None Include="Scripts\FullSerializer\Source\Converters\fsGuidConverter.cs.meta" />
+    <None Include="Scripts\FullSerializer\Source\Converters\fsIEnumerableConverter.cs.meta" />
+    <None Include="Scripts\FullSerializer\Source\Converters\fsKeyValuePairConverter.cs.meta" />
+    <None Include="Scripts\FullSerializer\Source\Converters\fsNullableConverter.cs.meta" />
+    <None Include="Scripts\FullSerializer\Source\Converters\fsPrimitiveConverter.cs.meta" />
+    <None Include="Scripts\FullSerializer\Source\Converters\fsReflectedConverter.cs.meta" />
+    <None Include="Scripts\FullSerializer\Source\Converters\fsTypeConverter.cs.meta" />
+    <None Include="Scripts\FullSerializer\Source\Converters\fsWeakReferenceConverter.cs.meta" />
+    <None Include="Scripts\FullSerializer\Source\Converters\Unity.meta" />
+    <None Include="Scripts\FullSerializer\Source\Converters\Unity\AnimationCurve_DirectConverter.cs.meta" />
+    <None Include="Scripts\FullSerializer\Source\Converters\Unity\Bounds_DirectConverter.cs.meta" />
+    <None Include="Scripts\FullSerializer\Source\Converters\Unity\Gradient_DirectConverter.cs.meta" />
+    <None Include="Scripts\FullSerializer\Source\Converters\Unity\GUIStyleState_DirectConverter.cs.meta" />
+    <None Include="Scripts\FullSerializer\Source\Converters\Unity\GUIStyle_DirectConverter.cs.meta" />
+    <None Include="Scripts\FullSerializer\Source\Converters\Unity\Keyframe_DirectConverter.cs.meta" />
+    <None Include="Scripts\FullSerializer\Source\Converters\Unity\LayerMask_DirectConverter.cs.meta" />
+    <None Include="Scripts\FullSerializer\Source\Converters\Unity\RectOffset_DirectConverter.cs.meta" />
+    <None Include="Scripts\FullSerializer\Source\Converters\Unity\Rect_DirectConverter.cs.meta" />
+    <None Include="Scripts\FullSerializer\Source\Converters\Unity\UnityEvent_Converter.cs.meta" />
+    <None Include="Scripts\FullSerializer\Source\fsAotCompilationManager.cs.meta" />
+    <None Include="Scripts\FullSerializer\Source\fsBaseConverter.cs.meta" />
+    <None Include="Scripts\FullSerializer\Source\fsConfig.cs.meta" />
+    <None Include="Scripts\FullSerializer\Source\fsContext.cs.meta" />
+    <None Include="Scripts\FullSerializer\Source\fsConverter.cs.meta" />
+    <None Include="Scripts\FullSerializer\Source\fsConverterRegistrar.cs.meta" />
+    <None Include="Scripts\FullSerializer\Source\fsData.cs.meta" />
+    <None Include="Scripts\FullSerializer\Source\fsDirectConverter.cs.meta" />
+    <None Include="Scripts\FullSerializer\Source\fsExceptions.cs.meta" />
+    <None Include="Scripts\FullSerializer\Source\fsIgnoreAttribute.cs.meta" />
+    <None Include="Scripts\FullSerializer\Source\fsISerializationCallbacks.cs.meta" />
+    <None Include="Scripts\FullSerializer\Source\fsJsonParser.cs.meta" />
+    <None Include="Scripts\FullSerializer\Source\fsJsonPrinter.cs.meta" />
+    <None Include="Scripts\FullSerializer\Source\fsMemberSerialization.cs.meta" />
+    <None Include="Scripts\FullSerializer\Source\fsObjectAttribute.cs.meta" />
+    <None Include="Scripts\FullSerializer\Source\fsObjectProcessor.cs.meta" />
+    <None Include="Scripts\FullSerializer\Source\fsPropertyAttribute.cs.meta" />
+    <None Include="Scripts\FullSerializer\Source\fsResult.cs.meta" />
+    <None Include="Scripts\FullSerializer\Source\fsSerializer.cs.meta" />
+    <None Include="Scripts\FullSerializer\Source\Internal.meta" />
+    <None Include="Scripts\FullSerializer\Source\Internal\fsCyclicReferenceManager.cs.meta" />
+    <None Include="Scripts\FullSerializer\Source\Internal\fsOption.cs.meta" />
+    <None Include="Scripts\FullSerializer\Source\Internal\fsPortableReflection.cs.meta" />
+    <None Include="Scripts\FullSerializer\Source\Internal\fsTypeExtensions.cs.meta" />
+    <None Include="Scripts\FullSerializer\Source\Internal\fsVersionedType.cs.meta" />
+    <None Include="Scripts\FullSerializer\Source\Internal\fsVersionManager.cs.meta" />
+    <None Include="Scripts\FullSerializer\Source\Reflection.meta" />
+    <None Include="Scripts\FullSerializer\Source\Reflection\fsMetaProperty.cs.meta" />
+    <None Include="Scripts\FullSerializer\Source\Reflection\fsMetaType.cs.meta" />
+    <None Include="Scripts\FullSerializer\Source\Reflection\fsReflectionUtility.cs.meta" />
+    <None Include="Scripts\FullSerializer\Source\Reflection\fsTypeCache.cs.meta" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
